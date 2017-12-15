@@ -1,5 +1,5 @@
 # congenial-barnacle
-Running Windows10 install from a seperate physical disk within QEMU on Linux
+Running Windows10 with-in Qemu from a seperate physical disk/partition
 
 Doing it this way will enable you to boot back into your the bare-metal install of Windows while also being able to boot it into QEMU while within Linux.
 
