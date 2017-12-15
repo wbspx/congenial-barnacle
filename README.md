@@ -50,15 +50,15 @@ Installation
   # Install the qemu guest-agent 
       - virtio-win-0.1.141\guest-agent\qemu-ga-x64.msi
       
-# You can inject viostor.inf into Windows with dism from a booted WinPE USB. - Will update with dism command at a later time.
+(You can inject viostor.inf into Windows with dism from a booted WinPE USB. - Will update with dism command at a later time.)
 
 Reboot back into your Linux drive
   - Download and extract the UEFI Bios
   - https://sourceforge.net/projects/edk2/files/OVMF/OVMF-X64-r15214.zip
   - rename OVMF.fd --> bios.bin
   
-From a terminal run the following command - 
-qemu-system-x86_64 -drive file=pflash,format=raw,file=bios.bin -drive if=pflash,format=raw,readonly,file=bins.bin -drive file=/dev/sda,media=disk,format=raw,snapshot=off,cache=none -enable-kvm -cpu host -m 8G
+From a terminal run the following command
+ - qemu-system-x86_64 -drive file=pflash,format=raw,file=bios.bin -drive if=pflash,format=raw,readonly,file=bins.bin -drive file=/dev/sda,media=disk,format=raw,snapshot=off,cache=none -enable-kvm -cpu host -m 8G
 
 Networking
   - You will need to install the bridge utilities for your specific Linux OS, create a bridge and add it to your qemu-system-x86_64 command
