@@ -1,21 +1,20 @@
 # congenial-barnacle
 Running Windows10 with Qemu from a physical hard drive
 
-This is going to be short and sweet. 
+This is going to be quick and dirty, more updates will come in the future.
 # Enviroment 
  - /dev/sda - Base Windows 10 install
- - /dev/sdb - SuSe 12 sp3 install
+ - /dev/sdb - Linux install
 
-Tested with SuSe 12 sp3, kvm-host install
-Tested with Manjaro-xfce-17.0.6-stable-x86_64
-  - Pacakged required for Manjaro
-  - pacman -S qemu
-  - pacman -S qemu-block-iscsi
-  - pacman -S libvirt
+Tested with SuSe 12 sp3 kvm-host install.
 
+Tested with Manjaro-xfce-17.0.6-stable-x86_64.
 
-
-
+Pacakged required for Manjaro.
+  
+     - pacman -S qemu
+     - pacman -S qemu-block-iscsi
+     - pacman -S libvirt
 
 # Required Files
 Virtio Drivers for Windows
