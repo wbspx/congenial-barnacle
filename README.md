@@ -1,5 +1,7 @@
 # congenial-barnacle
-Running Windows10 with Qemu from a physical hard drive
+Running Windows10 from a physical driver within Qemu on Linux
+
+Doing it this way will enable you to boot back into your the bare-metal install of Windows while also being able to boot it into QEMU while within Linux.
 
 This is going to be quick and dirty, more updates will come in the future.
 # Enviroment 
