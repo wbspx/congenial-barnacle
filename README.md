@@ -24,10 +24,14 @@ UEFI Bios file
 
 # Enable Iommu support 
 edit /etc/default/grub
+
   - Add intel_iommu=on to the end of GRUB_CMDLINE_LINUX_DEFAULT
+  
 Automatically re-generate the grub.cfg file
+
   - grub-mkconfig -o /boot/grub/grub.cfg
   - reboot
+  
 Verify Iommu support is enabled
    - dmesg | grep iommu
 
